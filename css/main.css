@@ -61,3 +61,12 @@ img {
 .page {
     padding: 0 20px 0;
     }
+.image {
+    width: 600px;
+    }
+.image img{
+    width: 100%;
+    height: auto;
+    }
+table {
+    }
