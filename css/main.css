@@ -1,7 +1,7 @@
 /*Here’s the CSS reset:*/
 html {
     box-sizing : border-box;
-    font-size  : 16px;
+    font-size  : 20px;
     }
 *, *:before, *:after {
     box-sizing : inherit;
