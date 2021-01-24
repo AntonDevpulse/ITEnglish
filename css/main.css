@@ -1,5 +1,7 @@
 /*Here’s the CSS reset:*/
 html {
+    padding    : 0;
+    margin     : 0;
     box-sizing : border-box;
     font-size  : 20px;
     }
@@ -7,9 +9,15 @@ html {
     box-sizing : inherit;
     }
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-    margin      : 0;
-    padding     : 0;
-    font-weight : normal;
+    font-family      : "Segoe UI", Calibri, Arial, Helvetica, sans-serif;
+    margin           : 0;
+    padding          : 0;
+    font-weight      : normal;
+    font-style       : normal;
+    color: #0b2221;
+    }
+body {
+    background-color : #f8e8d4;
     }
 ol, ul {
     list-style : none;
@@ -18,60 +26,108 @@ img {
     max-width : 100%;
     height    : auto;
     }
+h1 {
+    
+    }
+h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #0B2221;
+    }
+p {
+    font-size   : 16px;
+    font-weight : 600;
+    }
+table {
+    margin          : 0;
+    padding         : 0;
+    border-spacing  : 0;
+    border-collapse : collapse;
+    width           : 100%;
+    }
 
-/* Style the buttons that are used to open and close the accordion panel */
-.accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
+/* Start Tabs*/
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+    }
+
+/* Style tab links */
+.tablink {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background-color : #cfc1af;
+    color: #0B2221;
+    font-size: 20px;
+    float: left;
     border: none;
     outline: none;
-    transition: 0.4s;
+    cursor: pointer;
+    padding: 14px 16px;
+    width: 25%;
     }
+
+.tablink:hover {
+    background-color: #777;
+    }
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+    }
+
+#Topics {background-color: transparent;}
+#Words {background-color: transparent;}
+/* End Tabs*/
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
+    background-color : #205852;
+    color            : #f8e8d4;
+    cursor           : pointer;
+    padding          : 18px;
+    width            : 100%;
+    border           : none;
+    text-align       : left;
+    outline          : none;
+    font-size        : 15px;
+    transition       : 0.4s;
     }
 
 .active, .accordion:hover {
-    background-color: #ccc;
+    background-color : #5E8D7C;
+    color            : #f8e8d4;
+    
     }
 
 .panel {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    padding          : 0 18px;
+    max-height       : 0;
+    overflow         : hidden;
+    transition       : max-height 0.2s ease-out;
     }
 
 .page {
-    padding: 0 20px 0;
-    display: flex;
-    justify-content: center;
-    align-content: stretch;
+    padding         : 0 20px 0;
+    /*display         : flex;*/
+    /*justify-content : center;*/
+    /*align-content   : stretch;*/
+    /*flex-wrap: wrap;*/
     }
 .image {
-    width: 600px;
+    max-width : 800px;
     }
-.image img{
-    width: 100%;
-    height: auto;
+.image img {
+    width  : 100%;
+    height : auto;
     }
 .block {
-    border: 1px solid #4e4e4e;
-    margin: 5px;
+    margin : 5px;
     }
