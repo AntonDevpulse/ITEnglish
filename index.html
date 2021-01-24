@@ -13,7 +13,7 @@
 <div class="page">
     <button class="tablink" onclick="openPage('Topics', this, '#0C4242')" id="defaultOpen">Topics</button>
     <button class="tablink" onclick="openPage('Words', this, '#0C4242')">Words</button>
-<!--    <button class="tablink" onclick="openPage('About', this, 'orange')">About</button>-->
+    <button class="tablink" onclick="openPage('Irregular', this, '#0C4242')">Irregular verbs</button>
 
     <div id="Topics" class="tabcontent">
         <h2>Topics</h2>
@@ -155,6 +155,12 @@
                 <img src="img/in-on-at.jpg" alt="image">
             </div>
         </div>
+        <button class="accordion">Present Perfect VS Present Perfect Continuous</button>
+        <div class="panel">
+            <div class="image">
+                <img src="img/pp_vs_ppc.png" alt="image">
+            </div>
+        </div>
         <button class="accordion">Conditionals</button>
         <div class="panel">
             <div class="image">
@@ -176,7 +182,6 @@
 
 
     </div>
-
     <div id="Words" class="tabcontent">
         <h2>Words</h2>
         <button class="accordion">Work, Job</button>
@@ -197,22 +202,11 @@
             <p>Appoint smb - назначить на должность</p>
         </div>
     </div>
-
-<!--    <div id="Contact" class="tabcontent">-->
-<!--        <h3>Contact</h3>-->
-<!--        <p>Get in touch, or swing by for a cup of coffee.</p>-->
-<!--    </div>-->
-
-<!--    <div id="About" class="tabcontent">-->
-<!--        <h3>About</h3>-->
-<!--        <p>Who we are and what we do.</p>-->
-<!--    </div>-->
-
-<!--    <div class="block block__left">-->
-<!--        -->
-<!--    </div>-->
-
-</div>
+    <div id="Irregular" class="tabcontent">
+<!--        <iframe src="//pdf/table-of-irregular-verbs.dpf" frameborder="0" id="iframe2" style="width:100%;" ></iframe>-->
+        <embed src="pdf/table-of-irregular-verbs.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="800px" />
+    </div>
+    </div>
 
 </body>
     <script type="text/javascript" src="js/tabs.js" defer></script>
