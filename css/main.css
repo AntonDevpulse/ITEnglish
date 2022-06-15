@@ -124,6 +124,9 @@ body, html {
 .image {
     max-width : 600px;
     }
+.image.image--fullWidth {
+    max-width : 100%;
+}
 .image img {
     width  : 100%;
     height : auto;
