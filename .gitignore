@@ -1,0 +1,12 @@
+# dependencies
+/itenglish/node_modules
+
+# production
+/itenglish/build
+
+# IDEs
+/.idea
+/.vsode
+
+#develop
+/workfiles
