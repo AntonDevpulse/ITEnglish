@@ -1,0 +1,8 @@
+{
+  "name": "ITEnglish",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/AntonKosarev/ITEnglish.git",
+  "author": "AntonDevpulse <anton.kosarev@devpulse.io>",
+  "license": "MIT"
+}
