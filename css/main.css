@@ -128,8 +128,8 @@ body, html {
     max-width : 100%;
 }
 .image img {
-    width  : 100%;
-    height : auto;
+    /*width  : 100%;*/
+    /*height : auto;*/
     }
 .block {
     margin : 5px;
