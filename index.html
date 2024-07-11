@@ -9,6 +9,7 @@
 
     <title>English</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/cards.css">
     <style>/* Add application styles & imports to this file! */
     :root {
         height: 100%;
@@ -23,8 +24,9 @@
 <body>
 <div class="page">
     <button class="tablink" onclick="openPage('Topics', this, '#0C4242')" id="defaultOpen">Topics</button>
-    <button class="tablink" onclick="openPage('Words', this, '#0C4242')">Words</button>
     <button class="tablink" onclick="openPage('Irregular', this, '#0C4242')">Irregular verbs</button>
+    <button class="tablink" onclick="openPage('Words', this, '#0C4242')">Words</button>
+    <button class="tablink" onclick="openPage('cards', this, '#0C4242')">Cards</button>
 
     <div id="Topics" class="tabcontent">
         <h2>Topics</h2>
@@ -32,9 +34,8 @@
         <div class="panel">
             <div class="image">
                 <img src="img/conditionals.jpg" alt=image"">
-            </div>
-            <div class="image">
                 <img src="img/conditionals_with_present_tenses.png" alt=image"">
+                <img src="img/conditionals_with_past_tenses.png" alt=image"">
             </div>
         </div>
         <button class="accordion">Modal verbs</button>
@@ -349,6 +350,20 @@
         <embed src="pdf/table-of-irregular-verbs.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf"
                width="100%" height="800px" />
     </div>
+    <div id="cards" class="tabcontent">
+        <h2>Cards</h2>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-card" style="background-image: url('img/cards/1.png');"></div>
+                <div class="carousel-card" style="background-image: url('img/cards/2.png');"></div>
+                <div class="carousel-card" style="background-image: url('mg/cards/3.png');"></div>
+            </div>
+            <button class="carousel-button prev">&lt;</button>
+            <button class="carousel-button next">&gt;</button>
+        </div>
+        <script src="js/cards.js"></script>
+    </div>
+
 </div>
 
 </body>
